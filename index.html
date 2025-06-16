@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Management System</title>
+</head>
+<body>
+    <div class="title"> 
+        <h2> Library System</h2>
+    </div>
+    
+    <div class="container">
+             <div class="add-book-container"> 
+                <!--  to add a book section -->
+                    <div class="row">
+                        <h5>Name</h5>
+                        <input class="input-text" id="input-Name" type="text" placeholder="Book Name">
+                    </div>
+                    <div class="row">
+                        <h5>Author</h5>
+                        <input class="input-text" id="input-Author" type="text" placeholder="Author Name">
+                    </div>
+                    <div class="row">
+                        <h5>Publisher</h5>
+                        <input class="input-text" id="input-Publisher" type="text" placeholder="Publisher Name">
+                    </div>
+                    <div class="row">
+                        <h5>Number of Pages</h5>
+                        <input class="input-text" id="input-Pages" type="text" placeholder="Number of Pages">
+                    </div>
+                    <div class="row">
+                        <h5>Serial Number</h5>
+                        <input class="input-text" id="input-Serial" type="text" placeholder="Serial Number">
+                    </div>
+                    <button onclick="Add_books()" class="Add-btn" id="Add-btn">ADD</button>
+            </div>
+
+            <div class="display-book-container">
+                <!-- display the books section-->
+                    <table id="data_table" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Author</th>
+                                <th>Publisher</th>
+                                <th>Pages</th>
+                                <th>Serial</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+            </div>    
+    </div>
+    
+<script src="app.js" ></script>    
+
+</body>
+</html>
